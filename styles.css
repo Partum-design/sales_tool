@@ -11,7 +11,7 @@
   --accent-2:#7c8cff;
   --hot:#ff5a7a;
   --radius:18px;
-  --top:68px;
+  --top:80px;
   --pad:clamp(16px,3.2vw,48px);
   --serif:"Instrument Serif",Georgia,serif;
   --sans:"Inter Tight",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
@@ -42,7 +42,7 @@ body[data-slide="haften"] .bg-glow{background:radial-gradient(40% 35% at 75% 20%
 
 /* Topbar */
 .topbar{position:fixed;inset:0 0 auto;height:var(--top);display:flex;align-items:center;gap:20px;padding:0 var(--pad);z-index:30;background:linear-gradient(var(--bg) 40%,rgba(5,8,22,.6));backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.brand img{height:26px;width:auto}
+.brand img{height:46px;width:auto}
 .nav{display:flex;gap:4px;margin:0 auto;overflow-x:auto;scrollbar-width:none;padding:4px;border:1px solid var(--line);border-radius:999px;background:var(--panel)}
 .nav::-webkit-scrollbar{display:none}
 .nav a{white-space:nowrap;padding:8px 14px;border-radius:999px;font-size:13.5px;color:var(--muted);font-weight:500;transition:.25s}
@@ -222,7 +222,7 @@ body[data-slide="haften"] .bg-glow{background:radial-gradient(40% 35% at 75% 20%
 /* CONTACT */
 .contact{place-items:center}
 .contact-card{max-width:880px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3vh,28px)}
-.contact-logo{height:34px;width:auto}
+.contact-logo{height:clamp(56px,8vh,84px);width:auto}
 .contact h2{font-size:clamp(34px,5vw,80px)}
 .contact .lead{margin:0 auto}
 .services{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
@@ -249,9 +249,9 @@ body[data-slide="haften"] .bg-glow{background:radial-gradient(40% 35% at 75% 20%
   .dots{display:none}
 }
 @media (max-width:820px){
-  :root{--top:58px}
+  :root{--top:66px}
   .topbar{gap:12px;backdrop-filter:none;background:var(--bg)}
-  .brand img{height:20px}
+  .brand img{height:34px}
   .nav{position:fixed;left:0;right:0;bottom:0;margin:0;border-radius:0;border:0;border-top:1px solid var(--line);background:rgba(5,8,22,.92);backdrop-filter:blur(14px);padding:8px 10px calc(8px + env(safe-area-inset-bottom));z-index:40}
   .top-actions{margin-left:auto}
   #fsBtn{display:none}

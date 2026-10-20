@@ -21,16 +21,23 @@ window.PORTFOLIO = {
   logos: [
     { img: 'bios-logo-18', name: 'Laboratorios BIOS', note: 'Salud' },
     { img: 'mixtk-07', name: 'MIXTK', note: 'Alimentos' },
-    { img: 'kardani-01', name: 'Kardani', note: 'Entretenimiento infantil' },
     { img: 'foodie-07', name: 'Foodie Pack', note: 'Comida para oficina' },
     { img: 'mezcal-01', name: 'La Leyenda de los Perros', note: 'Mezcal' },
-    { img: 'lad-01', name: 'Laboratorios LAD', note: 'Salud' },
+    { img: 'logo-doggyvan', name: 'Doggy Van', note: 'Spa canino móvil' },
+    { img: 'logo-alba', name: 'Alba Cleanwork', note: 'Limpieza' },
+    { img: 'logo-regreso', name: 'Regreso al Origen', note: 'Bienestar' },
+    { img: 'logo-guadarrama', name: 'Guadarrama Jurídico', note: 'Despacho legal' },
+    { img: 'logo-nezga', name: 'Nezga Arquitectos', note: 'Arquitectura' },
+    { img: 'logo-verticlean', name: 'Verticlean', note: 'Mantenimiento' },
+    { img: 'logo-alze', name: 'Grupo Alze', note: 'Insumos industriales' },
+    { img: 'logo-smartstorage', name: 'Smart Storage', note: 'Bodegas' },
+    { img: 'logo-yemashun', name: 'Yemashun', note: 'Inmobiliaria' },
+    { img: 'logo-teachinghearts', name: 'Teaching Hearts', note: 'Educación' },
+    { img: 'logo-maktrom', name: 'Maktrom', note: 'Industria' },
     { img: 'ndt-logo', name: 'NDT 360', note: 'Industria' },
     { img: 'jemar-logo', name: 'Distribuidora JEMAR', note: 'Suministros' },
     { img: 'sermaq-logo3', name: 'SERMAQ', note: 'Maquinaria' },
     { img: 'epc-logo', name: 'Efficient Plastic Colors', note: 'Industria' },
-    { img: 'mcspine-01', name: 'MC Spine', note: 'Salud' },
-    { img: 'kardani-20', name: 'Kardani · isotipo', note: 'Variación' },
     { img: 'mixtk-08', name: 'MIXTK · negativo', note: 'Variación' },
     { img: 'foodie-11', name: 'Foodie Pack · sello', note: 'Variación' },
     { img: 'mezcal-03', name: 'Perros Mezcal · isotipo', note: 'Variación' },
@@ -38,21 +45,40 @@ window.PORTFOLIO = {
   ],
 
   stationery: [
+    { img: 'brochure-esic', name: 'ESIC · Brochure corporativo', kind: 'brochures' },
+    { img: 'brochure-urban', name: 'Urban Arquitectos · Brochure corporativo', kind: 'brochures' },
+    { img: 'brochure-hs', name: 'HS · Brochure corporativo', kind: 'brochures' },
+    { img: 'brochure-oces', name: 'OCES · Brochure corporativo', kind: 'brochures' },
+    { img: 'presentacion-synkto', name: 'Synkto · Presentación corporativa', kind: 'brochures' },
+    { img: 'catalogo-epc', name: 'Efficient Plastic Colors · Catálogo Masterbatch', kind: 'catalogos' },
+    { img: 'tarjeta-cosma', name: 'Grupo Cosma · Tarjeta de presentación', kind: 'tarjetas' },
+    { img: 'tarjeta-kronova', name: 'Kronova · Tarjeta de presentación', kind: 'tarjetas' },
+    { img: 'tarjeta-eterna', name: 'Eterna Freight · Tarjeta de presentación', kind: 'tarjetas' },
+    { img: 'tarjeta-bayit', name: 'Bayit Inmobiliaria · Tarjeta de presentación', kind: 'tarjetas' },
+    { img: 'tarjeta-synkto', name: 'Synkto · Tarjeta de presentación', kind: 'tarjetas' },
+    { img: 'tarjeta-dotan', name: 'Dotan · Tarjeta de presentación', kind: 'tarjetas' },
+    { img: 'tarjeta-puntocuak', name: 'Punto Cuak · Tarjeta de presentación', kind: 'tarjetas' },
+    { img: 'bios-tarjeta', name: 'BIOS · Tarjeta Ruta Rosa', kind: 'tarjetas' },
+    { img: 'firma-ceah', name: 'CEAH · Firma electrónica', kind: 'firmas' },
+    { img: 'firma-eterna', name: 'Eterna Freight · Firma electrónica', kind: 'firmas' },
+    { img: 'firma-kronova', name: 'Kronova · Firma electrónica', kind: 'firmas' },
+    { img: 'firma-ndt', name: 'NDT 360 · Firma electrónica', kind: 'firmas' },
+    { img: 'firma-cosma', name: 'Grupo Cosma · Firma electrónica', kind: 'firmas' },
+    { img: 'firma-bayit', name: 'Bayit · Firma electrónica', kind: 'firmas' },
+    { img: 'firma-synkto', name: 'Synkto · Firma electrónica', kind: 'firmas' },
     { img: 'bios-hoja-membretada', name: 'BIOS · Hoja membretada', kind: 'hojas' },
     { img: 'ndt-hoja', name: 'NDT 360 · Hoja membretada', kind: 'hojas' },
     { img: 'jemar-hoja', name: 'JEMAR · Hoja membretada', kind: 'hojas' },
     { img: 'mixteca-hoja', name: 'Mixteca · Hoja membretada', kind: 'hojas' },
     { img: 'sermaq-hoja', name: 'SERMAQ · Hoja membretada', kind: 'hojas' },
     { img: 'mcspine-hoja', name: 'MC Spine · Hoja membretada', kind: 'hojas' },
-    { img: 'bios-tarjeta', name: 'BIOS · Tarjeta Ruta Rosa (frente y vuelta)', kind: 'tarjetas' },
     { img: 'foodie-flyer', name: 'Foodie Pack · Flyer de lanzamiento', kind: 'flyers' },
     { img: 'lad-banner', name: 'LAD · Banner Tomografía', kind: 'flyers' },
     { img: 'bios-flyer-ventanilla', name: 'BIOS · Flyer ventanilla', kind: 'flyers' },
     { img: 'bios-flyer-vih', name: 'BIOS · Flyer pruebas VIH', kind: 'flyers' },
     { img: 'haften-flyer-expo', name: 'Haften · Flyer AHR Expo', kind: 'flyers' },
     { img: 'ndt-portada', name: 'NDT 360 · Portada redes', kind: 'portadas' },
-    { img: 'epc-portada', name: 'EPC · Portada redes', kind: 'portadas' },
-    { img: 'lad-08', name: 'LAD · Aplicación de marca', kind: 'portadas' }
+    { img: 'epc-portada', name: 'EPC · Portada redes', kind: 'portadas' }
   ],
 
   social: [
@@ -84,5 +110,5 @@ window.PORTFOLIO = {
     brand: ['bios-logo-18', 'bios-lab-hero', 'bios-lab-services', 'bios-lab-women', 'bios-lab-operations']
   },
 
-  clients: ['Haften', 'Laboratorios BIOS', 'GECOMEX', 'CEAH', 'Efficient Plastic Colors', 'Mixteca Foods', 'Koi Arquitectura', 'Epiko', 'Urban Flip', 'SERMAQ', 'Nikan Ka Moh', 'NDT 360', 'JEMAR', 'Element', 'MIXTK', 'Kardani', 'Foodie Pack', 'LAD', 'MC Spine', 'Denmar Spa', 'Perros Mezcal']
+  clients: ['Haften', 'Laboratorios BIOS', 'GECOMEX', 'CEAH', 'Efficient Plastic Colors', 'Mixteca Foods', 'Koi Arquitectura', 'Epiko', 'Urban Flip', 'SERMAQ', 'Nikan Ka Moh', 'NDT 360', 'JEMAR', 'Element', 'MIXTK', 'Foodie Pack', 'Denmar Spa', 'Perros Mezcal', 'Doggy Van', 'Alba Cleanwork', 'Nezga', 'Guadarrama Jurídico', 'Grupo Cosma', 'Kronova', 'Synkto', 'ESIC', 'Eterna Freight', 'Bayit']
 };
