@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Partum Design · Portafolio</title>
+<meta name="description" content="Portafolio comercial de Partum Design: páginas web en vivo, logotipos, papelería, redes sociales y cobertura de eventos.">
+<meta name="theme-color" content="#050816">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="#inicio" aria-label="Partum Design, inicio">
+    <img src="assets/brand/partum-white.png" alt="Partum Design">
+  </a>
+  <nav class="nav" aria-label="Secciones">
+    <a href="#inicio" class="is-active">Inicio</a>
+    <a href="#haften">Haften</a>
+    <a href="#bios">BIOS</a>
+    <a href="#web">Páginas web</a>
+    <a href="#logos">Logotipos</a>
+    <a href="#papeleria">Papelería</a>
+    <a href="#redes">Redes sociales</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <div class="top-actions">
+    <button class="icon-btn" id="fsBtn" title="Modo presentación (F)" aria-label="Modo presentación">
+      <svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+    </button>
+    <a class="btn btn-primary btn-sm" href="#contacto">Cotizar</a>
+  </div>
+</header>
+
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+<nav class="dots" id="dots" aria-label="Navegación rápida"></nav>
+
+<main id="deck">
+
+  <!-- 1. INICIO -->
+  <section class="slide hero" id="inicio" data-title="Inicio">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="pulse"></span> Portafolio comercial · 2026</p>
+      <h1>Marcas que se <em>ven</em> bien<br>y <em>venden</em> mejor.</h1>
+      <p class="lead">Identidad visual, papelería corporativa, redes sociales, cobertura de eventos y sitios web que puedes recorrer en vivo desde aquí.</p>
+      <div class="stats">
+        <div><strong data-count="14">14</strong><span>sitios web en vivo</span></div>
+        <div><strong data-count="21">21</strong><span>marcas en este portafolio</span></div>
+        <div><strong data-count="70">70</strong><span>piezas de diseño</span></div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#web">Ver sitios en vivo <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#haften">Casos destacados</a>
+      </div>
+    </div>
+    <div class="hero-stage" aria-hidden="true">
+      <figure class="float f1"><img src="assets/thumb/expo-stand-feria.webp" alt=""></figure>
+      <figure class="float f2"><img src="assets/thumb/bios-campana.webp" alt=""></figure>
+      <figure class="float f3 browser-mini"><i></i><img src="assets/thumb/haften.webp" alt=""></figure>
+      <figure class="float f4"><img src="assets/thumb/foodie-07.webp" alt=""></figure>
+      <figure class="float f5"><img src="assets/thumb/kardani-01.webp" alt=""></figure>
+    </div>
+    <div class="marquee" aria-label="Clientes"><div class="marquee-track" id="marquee"></div></div>
+  </section>
+
+  <!-- 2. HAFTEN -->
+  <section class="slide case" id="haften" data-title="Haften">
+    <aside class="case-info">
+      <p class="eyebrow">Caso destacado · 01</p>
+      <img class="case-logo" src="assets/brand/logo-haften-white.png" alt="Haften">
+      <h2>De distribuidor técnico a <em>marca protagonista</em> en AHR Expo México.</h2>
+      <p class="muted">Estrategia de contenido, cobertura fotográfica y en video de la expo, sitio web, reporte digital de resultados y credencialización del equipo.</p>
+      <ul class="chips">
+        <li>Redes sociales</li><li>Cobertura de expos</li><li>Reels</li><li>Sitio web</li><li>Tarjetas digitales</li>
+      </ul>
+      <dl class="facts">
+        <div><dt>Evento</dt><dd>AHR Expo México 2026 · Guadalajara</dd></div>
+        <div><dt>Industria</dt><dd>HVAC/R · BMS · Medición</dd></div>
+      </dl>
+    </aside>
+    <div class="case-body">
+      <div class="tabs" role="tablist" data-tabs="haften">
+        <button role="tab" aria-selected="true" data-panel="h-expo">Cobertura AHR Expo</button>
+        <button role="tab" data-panel="h-social">Redes sociales</button>
+        <button role="tab" data-panel="h-web">Sitio web <span class="live">en vivo</span></button>
+        <button role="tab" data-panel="h-report">Reporte de expo <span class="live">en vivo</span></button>
+      </div>
+      <div class="panels">
+        <div class="panel is-active" id="h-expo">
+          <div class="reels" id="haftenReels"></div>
+          <div class="mosaic" id="haftenExpo"></div>
+        </div>
+        <div class="panel" id="h-social"><div class="grid-posts" id="haftenSocial"></div></div>
+        <div class="panel" id="h-web"><div class="embed" data-url="https://haften-lyart.vercel.app/" data-poster="assets/web/haften.webp"></div></div>
+        <div class="panel" id="h-report"><div class="embed" data-url="https://haften-ahr-expo-2026.vercel.app/" data-poster="assets/web/haftenexpo.webp"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. BIOS -->
+  <section class="slide case case-bios" id="bios" data-title="BIOS">
+    <aside class="case-info">
+      <p class="eyebrow">Caso destacado · 02</p>
+      <img class="case-logo" src="assets/brand/bios-logo-white.png" alt="Laboratorios BIOS">
+      <h2>Un laboratorio con <em>sistema visual completo</em>, de la ventanilla a la web.</h2>
+      <p class="muted">Rediseño de logotipo, manual de marca, papelería operativa, campañas como Ruta Rosa, flyers por sucursal y un sitio con catálogo de estudios y agenda.</p>
+      <ul class="chips">
+        <li>Logotipo</li><li>Papelería</li><li>Campañas</li><li>Redes sociales</li><li>Sitio web</li>
+      </ul>
+      <dl class="facts">
+        <div><dt>Campaña</dt><dd>Ruta Rosa · Octubre 2026</dd></div>
+        <div><dt>Industria</dt><dd>Laboratorio clínico</dd></div>
+      </dl>
+    </aside>
+    <div class="case-body">
+      <div class="tabs" role="tablist" data-tabs="bios">
+        <button role="tab" aria-selected="true" data-panel="b-web">Sitio web <span class="live">en vivo</span></button>
+        <button role="tab" data-panel="b-campaign">Campaña Ruta Rosa</button>
+        <button role="tab" data-panel="b-print">Papelería</button>
+        <button role="tab" data-panel="b-brand">Identidad</button>
+      </div>
+      <div class="panels">
+        <div class="panel is-active" id="b-web"><div class="embed" data-url="https://www.bioslaboratorios.com/" data-poster="assets/web/bios.webp"></div></div>
+        <div class="panel" id="b-campaign"><div class="grid-posts" id="biosCampaign"></div></div>
+        <div class="panel" id="b-print"><div class="grid-print" id="biosPrint"></div></div>
+        <div class="panel" id="b-brand"><div class="grid-posts" id="biosBrand"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. WEB -->
+  <section class="slide web" id="web" data-title="Páginas web">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Desarrollo web</p>
+        <h2>14 sitios, <em>en vivo</em>. Navégalos aquí mismo.</h2>
+      </div>
+      <div class="devices" role="group" aria-label="Dispositivo">
+        <button data-device="desktop" class="is-active" title="Escritorio"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg></button>
+        <button data-device="tablet" title="Tablet"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M11 18h2"/></svg></button>
+        <button data-device="mobile" title="Celular"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></svg></button>
+      </div>
+    </div>
+    <div class="showroom">
+      <ul class="site-list" id="siteList"></ul>
+      <div class="browser" id="browser">
+        <div class="browser-bar">
+          <span class="lights"><i></i><i></i><i></i></span>
+          <a class="url" id="siteUrl" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span></span></a>
+          <button class="icon-btn" id="siteReload" title="Recargar" aria-label="Recargar"><svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></svg></button>
+          <a class="icon-btn" id="siteOpen" href="#" target="_blank" rel="noopener" title="Abrir en pestaña nueva" aria-label="Abrir en pestaña nueva"><svg viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <div class="viewport" id="viewport">
+          <div class="device-frame" id="deviceFrame">
+            <img class="poster" id="sitePoster" alt="">
+            <iframe id="siteFrame" title="Vista previa en vivo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="loader" id="siteLoader"><span></span>Cargando sitio en vivo…</div>
+          </div>
+        </div>
+        <div class="site-meta"><strong id="siteName"></strong><span id="siteDesc"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. LOGOS -->
+  <section class="slide logos" id="logos" data-title="Logotipos">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Identidad visual</p>
+        <h2>Logotipos con <em>carácter</em> y sistema.</h2>
+      </div>
+      <p class="muted head-note">Cada marca se entrega con versiones positiva, negativa, isotipo y aplicaciones.</p>
+    </div>
+    <div class="logo-grid" id="logoGrid"></div>
+  </section>
+
+  <!-- 6. PAPELERÍA -->
+  <section class="slide stationery" id="papeleria" data-title="Papelería">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Papelería corporativa</p>
+        <h2>Hojas, tarjetas, flyers y <em>portadas</em>.</h2>
+      </div>
+      <div class="filters" id="stationeryFilters">
+        <button class="is-active" data-filter="all">Todo</button>
+        <button data-filter="hojas">Hojas membretadas</button>
+        <button data-filter="tarjetas">Tarjetas</button>
+        <button data-filter="flyers">Flyers</button>
+        <button data-filter="portadas">Portadas</button>
+      </div>
+    </div>
+    <div class="strip" id="stationeryGrid"></div>
+  </section>
+
+  <!-- 7. REDES -->
+  <section class="slide social" id="redes" data-title="Redes sociales">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Redes sociales</p>
+        <h2>Contenido que <em>informa</em> y convierte.</h2>
+      </div>
+      <div class="filters" id="socialFilters"></div>
+    </div>
+    <div class="masonry" id="socialGrid"></div>
+  </section>
+
+  <!-- 8. CONTACTO -->
+  <section class="slide contact" id="contacto" data-title="Contacto">
+    <div class="contact-card">
+      <img src="assets/brand/partum-white.png" alt="Partum Design" class="contact-logo">
+      <h2>¿Hacemos lo mismo <em>por tu marca</em>?</h2>
+      <p class="lead">Logotipo, papelería, redes sociales, cobertura de eventos y sitio web. Un solo equipo, una sola línea visual.</p>
+      <div class="cta-row center">
+        <a class="btn btn-primary" href="https://wa.me/525616044547?text=Hola%20Partum%2C%20vi%20su%20portafolio%20y%20me%20interesa%20cotizar." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+        <a class="btn btn-ghost" href="https://www.partumdesign.com.mx/" target="_blank" rel="noopener">partumdesign.com.mx</a>
+      </div>
+      <ul class="services">
+        <li>Identidad visual</li><li>Papelería corporativa</li><li>Brochures y CV corporativo</li><li>Tarjetas de presentación</li><li>Redes sociales</li><li>Cobertura de expos</li><li>Desarrollo web</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada" hidden>
+  <button class="lb-close icon-btn" aria-label="Cerrar"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lb-prev icon-btn" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-next icon-btn" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
