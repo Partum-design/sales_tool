@@ -110,5 +110,16 @@ window.PORTFOLIO = {
     brand: ['bios-logo-18', 'bios-lab-hero', 'bios-lab-services', 'bios-lab-women', 'bios-lab-operations']
   },
 
+  brands: [
+    { img: 'dahua', name: 'Dahua Technology' },
+    { img: 'haften', name: 'Haften' },
+    { img: 'bios', name: 'Laboratorios BIOS' },
+    { img: 'tritton', name: 'Tritton' },
+    { img: 'xigma', name: 'Xigma Ingeniería' },
+    { img: 'plussecure', name: 'Plus Secure' },
+    { img: 'lad', name: 'Laboratorios LAD' },
+    { img: 'efficient', name: 'Efficient Plastic Colors' }
+  ],
+
   clients: ['Haften', 'Laboratorios BIOS', 'GECOMEX', 'CEAH', 'Efficient Plastic Colors', 'Mixteca Foods', 'Koi Arquitectura', 'Epiko', 'Urban Flip', 'SERMAQ', 'Nikan Ka Moh', 'NDT 360', 'JEMAR', 'Element', 'MIXTK', 'Foodie Pack', 'Denmar Spa', 'Perros Mezcal', 'Doggy Van', 'Alba Cleanwork', 'Nezga', 'Guadarrama Jurídico', 'Grupo Cosma', 'Kronova', 'Synkto', 'ESIC', 'Eterna Freight', 'Bayit']
 };

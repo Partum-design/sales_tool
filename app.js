@@ -51,6 +51,9 @@
   /* ---------- content ---------- */
   $('#marquee').innerHTML = [...P.clients, ...P.clients].map(c => `<span>${c}</span>`).join('');
 
+  // Marcas con las que hemos trabajado
+  $('#brandWall').innerHTML = P.brands.map((b, i) => `<figure class="brand-card" style="--i:${i}"><img src="assets/brands/${b.img}.webp" alt="${b.name}" loading="lazy"><figcaption>${b.name}</figcaption></figure>`).join('');
+
   // Haften
   const reels = $('#haftenReels');
   P.haften.reels.forEach((r, i) => {
@@ -183,7 +186,7 @@
   /* ---------- slide tracking ---------- */
   const dots = $('#dots');
   dots.innerHTML = slides.map(s => `<a href="#${s.id}" data-label="${s.dataset.title}" aria-label="${s.dataset.title}"></a>`).join('');
-  $$('.hero-copy > *, .section-head, .case-info, .case-body, .contact-card > *').forEach(el => el.classList.add('reveal'));
+  $$('.hero-copy > *, .section-head, .brand-card, .case-info, .case-body, .contact-card > *').forEach(el => el.classList.add('reveal'));
   $$('.hero-copy > *').forEach((el, i) => el.style.transitionDelay = i * 80 + 'ms');
 
   let active = 0;
